@@ -1,22 +1,19 @@
 ---
 title: A post with code samples
-date: '2019-06-18'
+date: 2019-06-18
 tags:
-  - demo-content
-  - code
-  - blog
+- demo-content
+- code
+- blog
+
 ---
+The best way to demo a code post is to display a real-life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.
 
-The best way to demo a code post is to display a real life post, so check out
-this one from
-[andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/)
-about a full bleed CSS utility.
-
-- - -
+***
 
 Sometimes you want to break your components out of the constraints that they find themselves in. A common situation where this occurs is when you don’t have much control of the container that it exists in, such as a CMS main content area.
 
-This is even more the case with editing tools such as the [WordPress Gutenberg editor](https://wordpress.org/gutenberg/), where in theory, you could pull in a component from a design system and utilise it in the main content of your web page. In these situations, it can be pretty darn handy to have a little utility that makes the element 100% of the viewport’s width _and_ still maintain its flow within its parent container.
+This is even more the case with editing tools such as the [WordPress Gutenberg editor](https://wordpress.org/gutenberg/), where in theory, you could pull in a component from a design system and utilize it in the main content of your web page. In these situations, it can be pretty darn handy to have a little utility that makes the element 100% of the viewport’s width _and_ still maintain its flow within its parent container.
 
 This is when I normally pull the `.full-bleed` utility class out of my back pocket.
 
@@ -34,14 +31,11 @@ It’s small, but hella mighty:
 
 Here it is in a context where it makes a fancy `<aside>` and a `<figure>` element bleed out of their parent container.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Piccalilli CSS Utility — Issue  #2 — Full bleed utility" src="//codepen.io/andybelldesign/embed/Nmxrwv/?height=300&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/andybelldesign/pen/Nmxrwv/'>Piccalilli CSS Utility — Issue  #2 — Full bleed utility</a> by Andy Bell
-  (<a href='https://codepen.io/andybelldesign'>@andybelldesign</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Piccalilli CSS Utility — Issue  #2 — Full bleed utility" src="//codepen.io/andybelldesign/embed/Nmxrwv/?height=300&theme-id=dark&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true"> See the Pen <a href='https://codepen.io/andybelldesign/pen/Nmxrwv/'>Piccalilli CSS Utility — Issue  #2 — Full bleed utility</a> by Andy Bell (<a href='https://codepen.io/andybelldesign'>@andybelldesign</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
 
 The `.full-bleed` utility gives those elements prominence and _importantly_ keeps their semantic place in the page. Just how I like it.
 
-- - -
+***
 
 🔥 **Pro tip**: When working with a utility like `.full-bleed`, it’s a good idea to add an inner container that has a max-width and auto horizontal margin. For this, I normal create a shared `.wrapper` component like this:
 
@@ -55,7 +49,7 @@ The `.full-bleed` utility gives those elements prominence and _importantly_ keep
 
 Having a container like `.wrapper` helps to create consistent, centred content.
 
-- - -
+***
 
 ### How the `.full-bleed` utility works
 
@@ -65,4 +59,4 @@ Finally, we use CSS transforms to `translateX(-50%)`. Because the transform work
 
 ## Wrapping up
 
-Hopefully this short and sweet trick will help you out on your projects. If it does, [drop me a tweet](https://twitter.com/andybelldesign), because I’d love to see it!
+Hopefully, this short and sweet trick will help you out on your projects. If it does, [drop me a tweet](https://twitter.com/andybelldesign), because I’d love to see it!
